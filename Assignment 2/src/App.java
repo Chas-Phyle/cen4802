@@ -1,6 +1,10 @@
 import java.util.Scanner;
 
 public class App {
+    /**
+     * Main method used for asking the user to input a number and the method will output the value associated in that position of the fibonacci sequence.
+     * @param args
+     */
     public static void main(String[] args) {
         System.out.println("How many numbers would you like to calculate? Please input 45 or less for now, or simply type -1 to leave.");
         Scanner userInput = new Scanner(System.in);
@@ -24,6 +28,13 @@ public class App {
         System.out.println("Calculating ");
         System.out.println("\n"+fibrecl(userChoiceInt));
 }
+
+/**
+ * Recursive algorithm for computating nth position of the fibonacci sequence
+ * @param numberOfSteps The nth postion the user would like to know of the fibonacci sequence.
+ * @return The value associated with the nth postion of the fibonacci sequence.
+ */
+
 
 public static long fibrecl(int numberOfSteps) { // recersive
 double n = numberOfSteps;
